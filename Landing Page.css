@@ -1,0 +1,255 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{
+    height: 100vh;
+    background: linear-gradient(to bottom right, #2C3E50,#161616);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    height: 85vh;
+    width: 80vw;
+    background: #212226;
+    box-shadow: 6px 12px 15px rgba(0,0,0,0.3);
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    position: relative;
+}
+
+.nav-bar{
+    flex-basis: 10%;
+    /* background: magenta; */
+    display: flex;
+    border-bottom: 1.5px solid rgba(144,144,144,0.2);
+}
+
+.logo{
+    flex-basis: 50%;
+    /* background: cyan; */
+    display: flex;
+    align-items: center;
+}
+
+.logo i{
+    font-size: 35px;
+    margin-left: 30px;
+    color: #aaabad;
+    transition: 0.3s;
+}
+
+.logo i:hover,.bar:hover{
+    color: white;
+    cursor: pointer;
+}
+
+.bar{
+    color: #aaabad;
+    transition: 0.3s;
+    position: relative;
+    z-index: 2;
+}
+
+.nav-items{
+    flex-basis: 50%;
+    /* background: mediumorchid; */
+}
+
+.nav-items ul{
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.nav-items ul li{
+    list-style: none;
+}
+.nav-items ul li a{
+    text-decoration: none;
+    color: #aaabad;
+    font-size: 11px;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.nav-items ul li a:hover{
+    color: white;
+    font-size: 13px;
+}
+
+
+.content{
+    flex-basis: 80%;
+    /* background: lightcoral; */
+    display: flex;
+    width: 100%;
+    /* align-items: center; */
+}
+
+.wrapper{
+   flex-basis: 40%;
+   display: flex;
+}
+
+.content-text{
+    margin: auto;
+}
+
+.content-text h1{
+    letter-spacing: 1.5px;
+    line-height: 50px;
+    color: white;
+    /* display: flex; */
+}
+
+.content-text span{
+    font-size: 12px;
+    color: rgba(247,123,0);
+    cursor: pointer;
+    display:inline-block;
+    margin-top: 25px;
+}
+.content-text span i{
+    font-size: 8px;
+    margin-left: 3px;
+}
+
+.content-image{
+    flex-basis: 60%;
+    /* background: lightgreen; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-image img{
+    height: 230px;
+    width: 185px;
+    box-shadow: 6px 12px 20px rgba(0,0,0,0.5);
+}
+
+.footer{
+    flex-basis: 10%;
+    display: flex;
+    /* background: lightsalmon; */
+}
+
+.social-media{
+    flex-basis: 65%;
+    /* background: lightsalmon; */
+}
+
+.social-media ul{
+    display: flex;
+    margin-left: 30px;
+}
+
+.social-media ul li{
+   list-style: none;
+   cursor: pointer;
+   margin: 0px 20px;
+}
+
+.social-media ul li a{
+    text-decoration: none;
+    color: #aaabad;
+    transition: 0.3s;
+}
+
+.social-media ul li a:hover{
+    color: white;
+}
+
+.icon{
+    flex-basis: 35%;
+    /* background: tomato; */
+    display: flex;
+}
+
+.icon i{
+    margin: 0px 10px;
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+.blackIcon{
+    color: #445963;
+}
+.redIcon{
+    color: #ff0000;
+}
+.blueIcon{
+    color: #3687D3;
+}
+
+.side-bar{
+    height: 100%;
+    width: 100%;
+    background: rgba(58,65,81,0.2);
+    backdrop-filter: blur(5px);
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    clip-path: circle(0% at 100% 0%);
+    display: flex;
+    justify-content: flex-end;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.side-bar ul{
+    flex-basis: 18%;
+    /* background: lightgray; */
+}
+
+.side-bar ul li{
+    list-style: none;
+    margin: 45px 0px;
+    transform: translateX(210px);
+}
+
+.side-bar ul li:nth-child(1){
+    transition: 0.3s ease 0.1s;
+}
+
+.side-bar ul li:nth-child(2){
+    transition: 0.3s ease 0.2s;
+}
+
+.side-bar ul li:nth-child(3){
+    transition: 0.3s ease 0.3s;
+}
+
+.side-bar ul li:nth-child(4){
+    transition: 0.3s ease 0.4s;
+}
+
+.side-bar ul li a{
+    text-decoration: none;
+    color: #aaabad;
+    font-size: 11px;
+    transition: 0.3s;
+}
+
+.side-bar ul li a:hover{
+    color: white;
+    font-size: 13px;
+}
+/* add class on javscript click event */
+
+.side-bar-js{
+    clip-path: circle(45% at 100% 0%) !important;
+}
+
+.sideBarList-js{
+    transform: translateX(0px) !important;
+}
